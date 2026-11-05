@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de cadastro e cálculo de notas</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Sistema de cadastro e cálculo de notas</h1>
+    
+    <form id="formulario">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <label for="nome">Nome Completo:</label>
+            <input
+                type="text"
+                id="nome"
+                name="nome"
+                placeholder="Digite seu Nome Completo"
+                required
+            >
+            
+            <br><br>
+
+            <label for="idade">Idade:</label> 
+            <input 
+                type="number" 
+                id="idade" 
+                name="idade" 
+                min="1" 
+                max="100"
+                placeholder="Digite sua idade"
+                required 
+            >
+        </fieldset>
+        <fieldset>
+            <legend>Notas</legend>
+
+            <label for="nota1">Primeira nota</label>
+            <input
+                type="decimal"
+                id="nota1"
+                name="nota1"
+                min="0"
+                max="10"
+                placeholder="Digite sua primeira nota"
+                required
+            >
+
+            <br><br>
+
+            <label for="nota2">Segunda nota</label>
+            <input
+                type="decimal"
+                id="nota2"
+                name="nota2"
+                min="0"
+                max="10"
+                placeholder="Digite sua segunda nota"
+                required
+            >
+
+            <br><br>
+
+            <label for="nota3">Terceira nota</label>
+            <input
+                type="decimal"
+                id="nota3"
+                name="nota3"
+                min="0"
+                max="10"
+                placeholder="Digite sua terceira nota"
+                required
+            >
+
+            <br><br>
+
+            <button id="submit">Mostrar</button>
+            <button type="reset">Limpar</button>
+        </fieldset>
+
+        <fieldset>
+            <legend>Resultados</legend>
+
+            <label for="resultado">Média</label>
+           <p id="resultado_medias"></p>
+
+           <br><br>
+
+           <label for="situacao">Situação</label>
+           <p id="situacao"></p>
+
+            <br><br>
+
+            <label for="exibicao">Exibição dos resultados</label>
+            <p id="exibicao"></p>
+            <p id="exibirN"></p>
+            <p id="exibirI"></p>
+            <p id="exibirN1"></p>
+            <p id="exibirN2"></p>
+            <p id="exibirN3"></p>
+            <p id="exibirM"></p>
+            <p id="exibirS"></p>
+           
+        </fieldset>
+    </form>
+    
+</body>
+
+</html>
